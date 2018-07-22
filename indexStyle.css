@@ -1,0 +1,184 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 6, 2015, 10:49:07 PM
+    Author     : DaveLordan
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald|Fjalla+One);
+
+@font-face {
+    font-family: kashmir;
+    src: url(KASHMIR.TTF);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+.page-wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+#logo{
+    position:absolute;
+    left:50%;
+    width: 200px;
+    margin-top:150px;
+    margin-left:-100px;
+}
+
+#main-content{
+    position:absolute;
+    left:50%;
+    width: 900px;
+    margin-top:400px;
+    margin-bottom: 100px;
+    margin-left:-450px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#0af;
+}
+#img-container{
+    height:100%;
+}
+
+
+#front-Img{
+   width:100%;
+   height: 100%;
+   position: relative;
+   top:16px;
+   z-index: 1;
+}
+
+#back-Img{
+   height: 100%;
+   width:100%;
+   position: relative;
+   top: -530px;
+   margin-bottom: -520px;
+   z-index: -1;
+
+}
+
+.site-footer{
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-top: 2px solid #000;
+    z-index: 10;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6443b+0,cf0404+45,680202+100 */
+    background: rgb(198,68,59); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(198,68,59,1) 0%, rgba(207,4,4,1) 45%, rgba(104,2,2,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(198,68,59,1)), color-stop(45%,rgba(207,4,4,1)), color-stop(100%,rgba(104,2,2,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(198,68,59,1) 0%,rgba(207,4,4,1) 45%,rgba(104,2,2,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(198,68,59,1) 0%,rgba(207,4,4,1) 45%,rgba(104,2,2,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(198,68,59,1) 0%,rgba(207,4,4,1) 45%,rgba(104,2,2,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(198,68,59,1) 0%,rgba(207,4,4,1) 45%,rgba(104,2,2,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6443b', endColorstr='#680202',GradientType=0 ); /* IE6-9 */
+}
+
+#contact-image{
+    position:relative;
+    left: 30px;
+    top: 7px;
+}
+
+#footerInfo{
+    position: relative;
+    left: 20px;
+    top:-5px;
+    font-family: 'Fjalla One',sans-serif;
+    color: black;
+}
+
+
+#name{
+    position:absolute;
+    height: 650px;
+    left:50%;
+    margin-left:-330px;
+    padding-top:10px;
+}
+
+#menu{
+    position:absolute;
+    font-size:2em;
+    margin-top:315px;
+    width:640px;
+    margin-left:-320px;
+}
+
+#menu td{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    padding-bottom:10px;
+
+
+}
+
+.menu_item{
+    font-family: 'Fjalla One',sans-serif;
+    background: -webkit-linear-gradient(#fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rep-info{
+    font-family: 'Fjalla One',sans-serif;
+}
+
+.rep-info td{
+    padding:5px;
+    font-size: 1.3em;
+}
+
+.gig-info{
+    font-family: 'Fjalla One',sans-serif;
+}
+
+.gig-info td{
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+
+.menu_item::after{
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #444;
+    margin-top:50px;
+    background: linear-gradient(left, transparent 0%,#444 50%,transparent 100%);
+}
+
+.menu_item:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(#f00, #555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
